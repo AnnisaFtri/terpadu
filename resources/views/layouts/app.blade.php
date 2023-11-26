@@ -190,6 +190,7 @@
     color: aquamarine;
 }
 #landingpage .col-img{
+    
     position: absolute;
     top: 50%;
     left: 22%;
