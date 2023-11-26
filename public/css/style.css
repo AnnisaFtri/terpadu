@@ -16,7 +16,8 @@
 
 .border {
     border: solid;
-    border-radius: 5px
+    border-radius: 5px;
+    height: 100px;
 }
 
 .card {
@@ -43,4 +44,13 @@
 
 .f-right {
     float: right;
+}
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background: var(--light);
+    /* background-color: white; */
 }

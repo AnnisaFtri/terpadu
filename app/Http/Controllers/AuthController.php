@@ -12,6 +12,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use TheSeer\Tokenizer\Exception;
+use App\Http\Controllers\landingpageController;
 
 class AuthController extends Controller
 {

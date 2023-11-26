@@ -3,6 +3,7 @@
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\Dashboardcontroller;
+use App\Http\Controllers\landingpageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -37,3 +38,6 @@ Route::get('/dashboard', [Dashboardcontroller::class, 'index']);
 Route::get('auth/login', [AuthController::class, 'index']);
 
 Route::get('/login', [AuthController::class, 'index'])->name('login');
+
+/*landingpage*/
+Route::get('/landingpage', [landingpageController::class, 'index']);
