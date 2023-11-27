@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use TheSeer\Tokenizer\Exception;
 use App\Http\Controllers\landingpageController;
-
+use App\http\Controllers\AnakController;
 class AuthController extends Controller
 {
 

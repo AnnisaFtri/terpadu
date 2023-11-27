@@ -12,7 +12,7 @@ class AnakController extends Controller
      */
     public function index()
     {
-    return view('data anak.anak');
+    return view('dataanak.index');
         
     }
     /**
@@ -21,7 +21,7 @@ class AnakController extends Controller
     public function create()
 
     {
-        return view('anak.create');
+        return view('dataanak.create');
     }
 
     /**

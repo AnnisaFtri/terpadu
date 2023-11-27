@@ -1,55 +1,14 @@
 @extends('layouts.app')
-@section('title', 'Dashboard')
+@section('title', 'dataanak')
 @section('content')
-<!-- <head> -->
-    <!--boxicons-->
-    
-    <body>
-        <section id="sidebar">
-            <a href="#" class="brand">
-            <img height="110" src="{{asset('logo.png')}}">
-                <span class="text">TERPADU</span>
-            </a>
-            <ul class="side-menu top">
-                
-                <li>
-                    <a href="#">
-                       <i class='bx bxs-home'></i>
-                       <span class="text">Dashboard</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class='bx bx-child' ></i>
-                        <span class="text">Data Balita</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class='bx bx-donate-heart'></i>
-                        <span class="text">Pelayanan</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class='bx bxs-droplet-half'></i>
-                        <span class="text">Pemeriksaan</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class='bx bx-user' ></i>
-                        <span class="text">User</span>
-                    </a>
-                </li>
-        </section>
+
         <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bootstrap Simple Data Table</title>
+<title>Data Anak</title>
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
