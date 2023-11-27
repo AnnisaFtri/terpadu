@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AnakController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\Dashboardcontroller;
@@ -40,4 +41,11 @@ Route::get('auth/login', [AuthController::class, 'index']);
 Route::get('/login', [AuthController::class, 'index'])->name('login');
 
 /*landingpage*/
+<<<<<<< HEAD
 Route::get('/landingpage', [landingpageController::class, 'index']);
+=======
+Route::get('/landingpage', [landingpageController::class, 'index']);
+
+/*crud*/
+route::get('/anak',[AnakController::class, 'index'])->name('anak');
+>>>>>>> 9ec9f635b51eb64464e2d4e3ca8864a7e8ea6da2

@@ -25,6 +25,7 @@
     <!-- <link href="https://unpkg.com/boxicon02.0.9/css/boxicons.min.css" rel="stylesheet"> -->
 
     <style>
+<<<<<<< HEAD
 /*dashboard*/     
 *{
     margin: 0;
@@ -117,6 +118,110 @@ body{
 
    
 
+=======
+        .navbar .nav-item .nav-link:hover {
+            color: #227dff;
+        }
+
+        .bg-c-blue {
+    background: linear-gradient(45deg,#4099ff,#73b4ff);
+}
+
+.bg-c-green {
+    background: linear-gradient(45deg,#2ed8b6,#59e0c5);
+}
+
+.bg-c-yellow {
+    background: linear-gradient(45deg,#FFB64D,#ffcb80);
+}
+
+.bg-c-pink {
+    background: linear-gradient(45deg,#FF5370,#ff869a);
+}
+
+.border {
+    border: solid;
+    border-radius: 50px
+}
+
+.card {
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,0.16);
+    box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,0.16);
+    border: none;
+    margin-bottom: 30px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.card .card-block {
+    padding: 25px;
+}
+
+.order-card i {
+    font-size: 26px;
+}
+
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
+}
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: var(--light);
+    background-color: #CAF2F0;
+    z-index: 1000;
+    font-family: Tuffy;
+}
+#sidebar .brand {
+    font-size: 24px;
+    font-weight: 700;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+#sidebar .brand .bx{
+    min-width: 60px;
+    display: flex;
+    justify-content: center;
+
+}
+#sidebar .side-menu {
+    width: 100%;
+    margin-top: 48px;
+}
+#sidebar .side-menu li {
+    height: 48px;
+    margin-left: 6px;
+    border-radius: 48px 0 0 48px;
+    padding: 4px;
+}
+#sidebar .side-menu li a {
+    width: 100%;
+    height: 100%;
+    background: var(--dark);
+    display: flex;
+    align-items: center;
+    border-radius: 48px;
+}
+#sidebar .a .img {
+    width: 5px;
+    height: 5px;
+}
+#sidebar .row {
+    --bs-gutter-y: 58;
+    display: flex;
+
+}
+>>>>>>> 9ec9f635b51eb64464e2d4e3ca8864a7e8ea6da2
 /* landingpage */
 #landingpage{
    margin: 0;
@@ -182,6 +287,10 @@ body{
     color: aquamarine;
 }
 #landingpage .col-img{
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 9ec9f635b51eb64464e2d4e3ca8864a7e8ea6da2
     position: absolute;
     top: 50%;
     left: 22%;
@@ -190,15 +299,22 @@ body{
     text-align: right;
 }
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 9ec9f635b51eb64464e2d4e3ca8864a7e8ea6da2
     </style>
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
+<<<<<<< HEAD
 <body>
+=======
+<body style="background: linear-gradient(45deg,#FFFFFF,#1ADAF1);">
+>>>>>>> 9ec9f635b51eb64464e2d4e3ca8864a7e8ea6da2
 
    
     </section>

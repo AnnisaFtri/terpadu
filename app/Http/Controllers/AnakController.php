@@ -12,15 +12,16 @@ class AnakController extends Controller
      */
     public function index()
     {
-        //
+    return view('data anak.anak');
+        
     }
-
     /**
      * Show the form for creating a new resource.
      */
     public function create()
+
     {
-        //
+        return view('anak.create');
     }
 
     /**

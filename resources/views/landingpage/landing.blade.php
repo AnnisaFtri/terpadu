@@ -34,4 +34,8 @@
     </section>
 
 
+<<<<<<< HEAD
     </body>
+=======
+    </body>
+>>>>>>> 9ec9f635b51eb64464e2d4e3ca8864a7e8ea6da2
