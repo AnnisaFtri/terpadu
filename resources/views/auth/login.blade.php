@@ -8,18 +8,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 </head>
-<body>
+<body >
     
 </body>
 </html>
+    <style>
+        
+    </style>
     <section class="vh-80">
         <div class="container py-5 h-100">
             <div class="row d-flex align-items-center justify-content-center h-100">
                 <div class="col-md-8 col-lg-7 col-xl-6">
-                    <img src="{{asset('loginn.png')}}"
+                    <img src="{{asset('logo.png')}}"
                          class="img-fluid" alt="Phone image">
                 </div>
-                <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1 border">
+                <div style="background-color: white; height: 430px;" class="col-md-8 col-lg-6 col-xl-4 offset-xl-1 border">
               <form action="/login" method="POST">
                 @csrf
                 <div class="divider d-flex align-items-center my-4">
@@ -45,8 +48,11 @@
                         @csrf
 
                         <!-- Submit button -->
-                        <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
-                        <br> belum memiliki akun?</br> <a href="{{url('/register')}}">Register</a>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block"><a href="{{url('/login')}}"></a>Login</button>
+
+                        <br>belum memiliki akun?<br>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block"><a href="{{url('/register')}}"></a>Register</button>
+                        
                     </form>
                 </div>
             </div>

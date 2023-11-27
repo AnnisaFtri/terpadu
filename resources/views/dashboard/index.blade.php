@@ -1,61 +1,69 @@
 @extends('layouts.app')
 @section('title', 'Dashboard')
 @section('content')
-<div style="background:rgb(247, 190, 237);" class="container">
-        <div class="row">
-
-                <div class="col-3">
-                    <a href="{{url('dashboard/user')}}" class="text-decoration-none">
-                        <div class="card bg-c-blue ">
-                            <div class="card-body text-white">
-                                <h1 class="text-right"><span
-                                        class="f-right"></span></h1>
-                                <h2>User</h2>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-3">
-                    <a href="{{url('dashboard/surat/jenis')}}" class="text-decoration-none">
-                        <div class="card bg-c-green">
-                            <div class="card-body text-white">
-                                <h1 class="text-right"><span
-                                        class="f-right"></span></h1>
-                                <h2>Jenis pelayanan
-                                </h2>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-           <div class="col-3">
-                <a href="{{url('dashboard/surat')}}" class="text-decoration-none">
-                    <div class="card bg-c-yellow">
-                        <div class="card-body text-white">
-                            <h1 class="text-right"><span
-                                    class="f-right"></span>
-                            </h1>
-                            <h2>Pemeriksaan</h2>
-                        </div>
-                    </div>
-                </a>
+<!-- <head> -->
+    <!--boxicons-->
+    
+    <body>
+    
+        <div class="sidebar">
+            <div class="logo">
+                <ul class="menu">
+                    
+                    <li class="active">
+                        <a href="#">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-child-reaching"></i>
+                            <span>Data Anak</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-hand-holding-droplet"></i>
+                            <span>Pelayanan</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-stethoscope"></i>
+                            <span>Pemeriksaan</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-user-nurse"></i>
+                            <span>User</span>
+                        </a>
+                    </li>
+                    <li class="logout" >
+                        <a href="{{url('/logout')}}">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span>Logout</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="col-3">
-                <a href="{{url('dashboard/log')}}" class="text-decoration-none">
-                    <div class="card bg-c-pink">
-                        <div class="card-body text-white">
-                            <h1 class="text-right"><span class="f-right"></span>
-                            </h1>
-                            <h2>Log</h2>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-3">
-                <a href="{{url('dashboard/log')}}" class="text-decoration-none">
-                    <div class="card bg-c-pink">
-                        <div class="card-body text-white">
-                            <h1 class="text-right"><span class="f-right"></span>
-                            </h1>
-                            <h2>Data Anak</h2>
-                        </div>
         </div>
+        
+        <div class="main--content">
+            <div class="header--wrapper">
+                <div class="header--title">
+                    <span>Primary</span>
+                    <h2>Dashboard</h2>
+                </div>
+                <div class="user--info">
+                    <div class="search--box">
+                        <i class="fa-solid fa-search"></i>
+                        <input type="text" placeholder="search"/>
+                    </div>
+                    <img src="{{asset('logo.png')}}" alt="">
+                </div>
+            </div>
+        </div>
+    </body>
+<!-- </head> -->
