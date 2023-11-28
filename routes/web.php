@@ -47,5 +47,8 @@ Route::get('/landingpage', [landingpageController::class, 'index']);
 Route::get('/landingpage', [landingpageController::class, 'index']);
 
 /*crud*/
-route::get('/dataanak', [AnakController::class, 'index'])->name('index');
-route::post('/dataanak', [AnakController::class, 'create'])->name('anak');
+// route::get('/dataanak', [AnakController::class, 'index'])->name('index');
+// route::post('/dataanak', [AnakController::class, 'create'])->name('anak');
+
+/*dataanak*/
+Route::resource('/dashboard/dataanak', Dashboardcontroller::class)->middleware('auth');

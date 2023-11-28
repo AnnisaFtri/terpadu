@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.layout')
 @section('title', 'login')
 @section('content')
 <!DOCTYPE html>
@@ -16,18 +16,18 @@
         
     </style>
     <section class="vh-80">
-        <div class="container py-5 h-100">
+        <div class="container py-2 h-100">
             <div class="row d-flex align-items-center justify-content-center h-100">
-                <div class="col-md-8 col-lg-7 col-xl-6">
+                <div class="col-md-8 col-lg-7 col-xl-6 ml-2">
                     <img src="{{asset('logo.png')}}"
                          class="img-fluid" alt="Phone image">
                 </div>
-                <div style="background-color: white; height: 430px;" class="col-md-8 col-lg-6 col-xl-4 offset-xl-1 border">
-              <form action="/login" method="POST">
+                <div style="background-color: white; width: 400px; height:450px; border-radius: 10%;" class="col col-md-8 col-lg-6 col-xl-4 offset-xl-1 border ml-4
                 @csrf
                 <div class="divider d-flex align-items-center my-4">
                   <p class="text-center fw-bold mx-3 mb-0" style="font-size: 200%;">Login</p>
                 </div>
+            <form method="post" action="/login">
                         <!-- Email input -->
                         <div class="form-outline mb-4">
                             <label class="form-label" for="username">Username</label>
@@ -51,7 +51,7 @@
                         <button type="submit" class="btn btn-primary btn-lg btn-block"><a href="{{url('/login')}}"></a>Login</button>
 
                         <br>belum memiliki akun?<br>
-                        <button type="submit" class="btn btn-primary btn-lg btn-block"><a href="{{url('/register')}}"></a>Register</button>
+                        <a class="btn btn-danger" type="submit" href="{{route('register')}}">Register</a>
                         
                     </form>
                 </div>

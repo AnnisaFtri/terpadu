@@ -93,104 +93,12 @@ body{
 }
 
 /*main body section */
-.main--content{
-    position: relative;
-    background: rgb(233, 89, 89);
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-.header--wrapper img{
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    border-radius: 50%;
-}
-.header--wrapper{
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* align-items: center; */
-    /* flex-wrap: wrap; */
-   
-    margin-left: 100px;
-}
+
 
 
    
 
 /* landingpage */
-#landingpage{
-   margin: 0;
-   padding: 0;
-   width: 100%;
-   background-color: aquamarine;
-    
-}
-#landingpage .wrapper{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(#1ADAF1, #A7EEF6);
-}
-#landingpage .logo{
-    float: left;
-    margin-left: 46px;
-    padding: 0px 38px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    font-size: 25px;
-}
-#landingpage .logo a{
-    text-decoration: none;
-    color: whitesmoke;
-    margin-bottom: 5%;
-}
-#landingpage .header{
-    text-align: center;
-    position: absolute;
-    top: 40%;
-    left: 72%;
-    transform: translate(-50%, -50%);
-}
-#landingpage .header h1{
-    color: white;
-    text-align: left;
-    font-family: 'Noto Serif JP', sans-serif;
-    font-size: 35px;
-}
-#landingpage .header span{
-    color: #35230e;
-}
-#landingpage .content-header{
-    position: absolute;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    top: 65%;
-    left: 73%;
-}
-#landingpage .content-header p{
-    color: black;
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    text-align: left;
-}
-#landingpage .content-header .btn btn-danger{
-    width: 100%;
-    height: 42px;
-    border-radius: 0px 10px 10px 0px;
-    border: none;
-    color: aquamarine;
-}
-#landingpage .col-img{
-    
-    position: absolute;
-    top: 50%;
-    left: 22%;
-    transform: translate(-50%, -50%);
-    width: 57%;
-    text-align: right;
-}
 
 
 
