@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @extends('layouts.app')
 @section('title', 'dataanak')
 @section('content')
@@ -508,3 +509,5 @@ $(document).ready(function(){
 </div>
 </body>
 </html>
+=======
+>>>>>>> 7bc474f02706a6d612bee2143ba9d38296801764

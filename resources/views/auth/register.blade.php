@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 @extends('layouts.layou')
 @section('title', 'login')
+=======
+@extends('layouts.layout')
+@section('title', 'Register')
+>>>>>>> 7bc474f02706a6d612bee2143ba9d38296801764
 @section('content')
 <!DOCTYPE html>
 <html lang="en">
@@ -13,13 +18,13 @@
 </body>
 </html>
     <section class="vh-80">
-        <div class="container py-5 h-100">
+        <div class="container py-2 h-100">
             <div class="row d-flex align-items-center justify-content-center h-100">
-                <div class="col-md-8 col-lg-7 col-xl-6">
+                <div class="col-md-8 col-lg-7 col-xl-6 ml-2">
                     <img height="500" src="{{asset('register.png')}}"
                          class="img-fluid" alt="Phone image">
                 </div>
-                <div style="background-color: white; height: 840px;" class="col-md-8 col-lg-6 col-xl-4 offset-xl-1 border">
+                <div style="background-color: white; width: 400px; height:800px; border-radius: 10%;" class="col col-md-8 col-lg-6 col-xl-4 offset-xl-1 border ml-4">
               <form action="/register" method="POST">
                 @csrf
                 <div class="divider d-flex align-items-center my-4">
