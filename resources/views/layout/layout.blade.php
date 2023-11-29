@@ -17,7 +17,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"
 
     <!-- Custom CSS -->
-    <link href="{{asset('public/css/style.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('css/style.css')}}" rel="stylesheet" type="text/css">
     <link rel="icon" href="{{asset('logo.png')}}">
 
 
@@ -32,7 +32,7 @@
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
-<body style="background: linear-gradient(45deg,#FFFFFF,#1ADAF1);">
+<body style=" background: linear-gradient(#1ADAF1, #A7EEF6);">
 
    
     {{-- </section>
@@ -63,7 +63,7 @@
 
     <main >
         <div class="container" style="padding: 70px">
-        @include('layouts.flash-message')
+        @include('layout.flash-message')
         @yield('content')
     </div>
     </main>

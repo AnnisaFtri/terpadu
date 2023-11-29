@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-@extends('layouts.layou')
-@section('title', 'login')
-=======
 @extends('layouts.layout')
 @section('title', 'Register')
->>>>>>> 7bc474f02706a6d612bee2143ba9d38296801764
 @section('content')
 <!DOCTYPE html>
 <html lang="en">

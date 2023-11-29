@@ -27,11 +27,17 @@ class AnakController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store()
-    {
-        return view('dataanak.store');
-    }
 
+    public function store(Request $request)
+
+    {
+        // $data_anak =
+        // return view('dataanak.store');
+    }
+    
+    public function hapus(Request $request){
+        $check = dataanak::where('id_data_anak',$request->id_data_anak)->get();
+    }
     /**
      * Display the specified resource.
      */
