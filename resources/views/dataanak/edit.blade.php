@@ -1,35 +1,46 @@
-@extends('layout.app')
-<!-- START FORM -->
-@section('content') 
-
-<form action='{{ url('anak->nim) }}' method='post'>
-@csrf 
-@method('PUT')
-<div class="my-3 p-3 bg-body rounded shadow-sm">
-    <a href='{{ url('mahasiswa') }}' class="btn btn-secondary"><< kembali</a>
-    <div class="mb-3 row">
-        <label for="nim" class="col-sm-2 col-form-label">NIM</label>
-        <div class="col-sm-10">
-            {{ $data->nim }}
-        </div>
-    </div>
-    <div class="mb-3 row">
-        <label for="nama" class="col-sm-2 col-form-label">Nama</label>
-        <div class="col-sm-10">
-            <input type="text" class="form-control" name='nama' value="{{ $data->nama }}" id="nama">
-        </div>
-    </div>
-    <div class="mb-3 row">
-        <label for="jurusan" class="col-sm-2 col-form-label">Jurusan</label>
-        <div class="col-sm-10">
-            <input type="text" class="form-control" name='jurusan' value="{{ $data->jurusan }}" id="jurusan">
-        </div>
-    </div>
-    <div class="mb-3 row">
-        <label for="jurusan" class="col-sm-2 col-form-label"></label>
-        <div class="col-sm-10"><button type="submit" class="btn btn-primary" name="submit">SIMPAN</button></div>
-    </div>
+@extends('layouts.app')
+@section('title', 'dataanak')
+@section('content')
+<!-- Edit Modal HTML -->
+<div id="editEmployeeModal" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form>
+				<div class="modal-header">						
+					<h4 class="modal-title">Edit</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				</div>
+				<div class="modal-body">					
+					<div class="form-group">
+						<label>Nik</label>
+						<input type="text" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label>Nama Orangtua</label>
+						<input type="text" class="form-control" required>
+					</div>
+                    <div class="form-group">
+						<label>name</label>
+						<input type="text"  class="form-control" required></textarea>
+					</div>
+                    <div class="form-group">
+						<label>JK</label>
+						<input type="text" class="form-control" required>
+					</div>
+                    <div class="form-group">
+						<label>Tanggal Lahir</label>
+						<input type="text" class="form-control" required>
+					</div>		
+                    <div class="form-group">
+						<label>Alamat</label>
+						<input type="text" class="form-control" required>
+					</div>																		
+				</div>
+				<div class="modal-footer">
+					<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+					<input type="submit" class="btn btn-info" value="Save">
+				</div>
+			</form>
+		</div>
+	</div>
 </div>
-</form>
-<!-- AKHIR FORM -->
-@endsection

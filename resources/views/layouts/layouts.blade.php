@@ -26,82 +26,72 @@
 
     <style>
 /*dashboard*/     
-*<style>
-    <span style="font-family: verdana, geneva, sans-serif;">
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
-*<style>
-    <span style="font-family: verdana, geneva, sans-serif;">/*  import google fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
 *{
-  margin: 0;
-  padding: 0;
-  outline: none;
-  border: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
 }
 body{
-  background: #dfe9f5;
+    display: flex;
+    background: #A7EEF6;
 }
-.container{
-  display: flex;
+.sidebar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 95px;
+    height: 100vh;
+    padding:0 0rem;
+    color: white;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: #1ADAF1;
+
 }
-nav{
-  position: relative;
-  top: 0;
-  bottom: 0;
-  height: 100vh;
-  left: 0;
-  background: #fff;
-  width: 280px;
-  overflow: hidden;
-  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+.sidebar:hover{
+    width: 240px;
+    transition: 0.5s;
 }
 .logo{
-  text-align: center;
-  display: flex;
-  margin: 10px 0 0 10px;
+    height: 80px;
+    padding: 20px; /*buat jauhin sidebar atas */
 }
-.logo img{
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
+.menu{
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
 }
-.logo span{
-  font-weight: bold;
-  padding-left: 15px;
-  font-size: 18px;
-  text-transform: uppercase;
+.menu li{
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
 }
-a{
-  position: relative;
-  color: rgb(85, 83, 83);
-  font-size: 14px;
-  display: table;
-  width: 280px;
-  padding: 10px;
+.menu li:hover,
+.active{
+    background: #bce2e7;
 }
-nav .fas{
-  position: relative;
-  width: 70px;
-  height: 40px;
-  top: 14px;
-  font-size: 20px;
-  text-align: center;
+.menu a{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
 }
-.nav-item{
-  position: relative;
-  top: 12px;
-  margin-left: 10px;
+.menu a span{
+    overflow: hidden;
 }
-a:hover{
-  background: #eee;
+.menu a i{
+    font-size: 1.2rem;
 }
-.logout{
-  position: absolute;
-  bottom: 0;
-}
+
 /*main body section */
 .main--content{
     position: relative;
@@ -206,55 +196,53 @@ a:hover{
 
 
     </style>
-<span style="font-family: verdana, geneva, sans-serif;">
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Dashboard | By Code Info</title>
-  <link rel="stylesheet" href="style.css" />
-  <!-- Font Awesome Cdn Link -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+
+    <!-- Scripts -->
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
-<body>
-  <div class="container">
-    <nav>
-      <ul>
-        <li><a href="#" class="logo">
-          <img src="/logo.jpg" alt="">
-          <span class="nav-item">DashBoard</span>
-        </a></li>
-        <li><a href="#">
-          <i class="fas fa-home"></i>
-          <span class="nav-item">Home</span>
-        </a></li>
-        <li><a href="">
-          <i class="fas fa-user"></i>
-          <span class="nav-item">Profile</span>
-        </a></li>
-        <li><a href="">
-          <i class="fas fa-wallet"></i>
-          <span class="nav-item">Wallet</span>
-        </a></li>
-        <li><a href="">
-          <i class="fas fa-chart-bar"></i>
-          <span class="nav-item">Analytics</span>
-        </a></li>
-        <li><a href="">
-          <i class="fas fa-tasks"></i>
-          <span class="nav-item">Tasks</span>
-        </a></li>
-        <li><a href="">
-          <i class="fas fa-cog"></i>
-          <span class="nav-item">Settings</span>
-        </a></li>
-        <li><a href="">
-          <i class="fas fa-question-circle"></i>
-          <span class="nav-item">Help</span>
-        </a></li>
-        <li><a href="" class="logout">
-          <i class="fas fa-sign-out-alt"></i>
-          <span class="nav-item">Log out</span>
-        </a></li>
-      </ul>
-    </nav>
+<body style="background: linear-gradient(45deg,#FFFFFF,#1ADAF1);">
+
+   
+    {{-- </section>
+                <!-- Right Side Of Navbar -->
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <!-- Authentication Links -->
+                    @guest
+                        @if (Route::has('login'))
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('') }}</a>
+                            </li>
+                        @endif
+
+                    @else
+                        <li class="nav-item mx-4 d-flex align-items-center">
+                            <h1 class="m-auto mx-2"><i class="bi bi-person-circle"></i></h1>
+                           
+                        </li>
+                       
+                        </li>
+                    @endguest
+                </ul>
+            </div>
+        </div>
+    </nav> --}}
+
+    
+    <main >
+        <div class="container" style="padding: 70px">
+        @include('layouts.flash-message')
+        @yield('content')
+    </div>
+    </main>
+
+
+@yield('footer')
+<script>
+    window.setTimeout(function () {
+        $(".alert").fadeTo(500, 0).slideUp(500, function () {
+            $(this).remove();
+        });
+    }, 3000);
+</script>
+</body>
+</html>

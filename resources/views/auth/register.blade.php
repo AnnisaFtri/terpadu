@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.layou')
 @section('title', 'login')
 @section('content')
 <!DOCTYPE html>

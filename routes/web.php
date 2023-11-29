@@ -47,5 +47,5 @@ Route::get('/landingpage', [landingpageController::class, 'index']);
 Route::get('/landingpage', [landingpageController::class, 'index']);
 
 /*crud*/
-route::get('/dataanak', [AnakController::class, 'index'])->name('index');
-route::post('/dataanak', [AnakController::class, 'create'])->name('anak');
+Route::get('/dataanak', [AnakController::class, 'index'])->name('index');
+Route::post('/dataanak', [AnakController::class, 'store'])->name('simpan');

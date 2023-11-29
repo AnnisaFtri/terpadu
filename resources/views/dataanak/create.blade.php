@@ -1,61 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    @include('template.head')
-</head>
-<body class="hold-transition sidebar-mini">
-    <div class="wrapper">
-        <!-- navbar -->
-        @include('template.head')
-        <!--/.navbar -->
-        <!-- main sidebar container -->
-        @include('template.sidebar')
-        <!-- content wrapper.contains page content -->
-        <div class="content-header">
-            <div class="container-fluid">
-                <div class="row mb-2">
-                    <div class="col-sm-6">
-                        <h1 class="m-0 text-dark">terpadu</h1>
-                    </div><!-- /.col -->
-                    <div class="col-sm-6">
-                        <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">Data Anak</a></li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--/content-header -->
-        <!-- main content -->
-        <div class="content">
-            <div class="card card-info card-outline">
-                <div class="card-header">
-                    <div class="card-tools">
-                        <a href="#" class="btn btn-success">Tambah Data <i class="fas fa-plus-square"></i></a>
-                    </div>
-                </div>
-            
-                <h3></h3>Create Data Anak
-                </div>
+@extends('layouts.app')
+@section('title', 'create')
+@section('content')
 
-                <div class="card-body">
-                    <table class="table table-bordered">
-                        <tr>
-                            <th>Nik anak</th>
-                            <th>No kk</th>
-                            <th>Nama Anak</th>
-                            <th>Tanggal Lahir</th>
-                            <th>Jenis Kelamin</th>
-                            <th>Nama orang tua</th>
-                            <th>Anak ke</th>
-                            <th>Alamat</th>
-
-                    <form action="" method="post">
-                        <div class="form-group">
-                            <input type="text" id="nik_anak" name="nik_anak" class="form-control" placeholder="nik_anak">
-                        </div>
-                        <div class="form-group">
-                            <textarea name="nama" name="nik_anak" class="form-control" placeholder="nik_anak">
-                        <div class="form-group">
-                            <button type="submit class="btn btn-succes
+<div id="addEmployeeModal" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form>
+				<div class="modal-header">						
+					<h4 class="modal-title">Tambah Data Anak</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				</div>
+				<div class="modal-body">					
+                <div class="form-group">
+						<label>Nik</label>
+						<input type="text" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label>Nama Orangtua</label>
+						<input type="text" class="form-control" required>
+					</div>
+                    <div class="form-group">
+						<label>name</label>
+						<input type="text"  class="form-control" required></textarea>
+					</div>
+                    <div class="form-group">
+						<label>JK</label>
+						<input type="text" class="form-control" required>
+					</div>
+                    <div class="form-group">
+						<label>Tanggal Lahir</label>
+						<input type="text" class="form-control" required>
+					</div>		
+                    <div class="form-group">
+						<label>Alamat</label>
+						<input type="text" class="form-control" required>
+					</div>							
+				</div>
+				<div class="modal-footer">
+					<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+					<input type="submit" class="btn btn-success" value="Add">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

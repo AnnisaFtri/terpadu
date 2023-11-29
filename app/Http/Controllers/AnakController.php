@@ -27,9 +27,9 @@ class AnakController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store()
     {
-        //
+        return view('dataanak.store');
     }
 
     /**
@@ -45,7 +45,7 @@ class AnakController extends Controller
      */
     public function edit(anak $anak)
     {
-        //
+    return view('dataanak.edit');
     }
 
     /**
